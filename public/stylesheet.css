@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+    margin : 0;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+@font-face{
+    font-family: 'nanum';
+    src: url(nanum.TTF) format('truetype');
+}
+
+@font-face{
+    font-family: 'nanumTitle';
+    src: url(nanumTitle.TTF) format('truetype');
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul{
+     list-style: none;
+}
+.navigator, #nav {
+    display: flex;
+    flex-direction : row;
+    flex-wrap : nowrap;
+    justify-content: space-between;
+}
+.navigator{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 10px 3%;
+    background-color: white;
+}
+#nav{
+    font-family: nanum;
+    font-weight: 800;
+    line-height: 30px;
+}
+#nav a{
+    color : black;
+}
+#logo{
+    height: 30px;
+}
+
+header{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background : url("image/cover.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    font-family: nanumTitle;
+    font-weight: 800;
+    font-size: 54px;
+    text-align: center;
+    color: black;
+    padding-top: 30vh;
+}
+header h2{
+    box-sizing: content-box;
+    margin-top: 40vh;
+    font-family: nanum;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+#articles{
+    margin: 100vh auto;
+    width: 960px;
+    background-color: rgba(0,0,0,0.6);
+    overflow: auto;
+    font-family: nanum;
+}
+section h2{
+    box-sizing: content-box;
+    font-family: nanum;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+.flex{
+    display: flex;
+    flex-direction : row;
+    flex-wrap :nowrap;
+    justify-content : space-around;
+    
+}
+.arts{
+    color: white;
+    margin: 0 10px;
+}
+.arts ul,p{
+    padding-left: 10px;
+    margin: 0;
+    font-family: nanum;
+    font-size: 15px;
+    line-height: 2;
+    list-style: none;
+}
+.img{
+    width: 300px;
+}
+#articles a{
+    color : white;
+}
+.innerUL li{
+    font-size: 13px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin: 100vh 0 0 0;
+    padding: 0 12.5%;
+}
+.information{
+    display: flex;
+    flex-direction : row;
+    justify-content : center;
+    flex-wrap : nowrap;
+}
+.info_img{
+    padding-top: 5px;
+    height: 50px;
+}
+
+.hoverEffect:hover{
+    opacity: 0.6;
+}
